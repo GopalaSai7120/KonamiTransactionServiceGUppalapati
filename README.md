@@ -52,3 +52,20 @@ Write functions required for the TRANSACTION_TABLE:
 4. Verify if the Person has access to perform the transaction in PERSON_CAN_DO_TABLE.
 5. Verify if the Unique Transaction Sequence exists in history by checking sequence number, DEPOSIT transaction type, and amount.
 6. If all conditions are met, proceed with Inserting DEPOSIT_VOID Transaction.
+
+### DEPOSIT/WITHDRAW Transaction:
+
+1. Verify Input Parameters are passed correctly in CORRECT format (Data type validation)
+2. Verify if PERSON exists in the system by using PERSON_ID in PERSON_TABLE 
+3. Verify TRANSACTION_TYPE by Transaction Name in TRANSACTION_TYPE_TABLE if User is trying to perform valid transaction 
+4. Verify if Person has access to perform DEPOSIT/WITHDRRAW transaction in PERSON_CAN_DO Table 
+5. If all conditions are met proceed with Inserting DEPOSIT_VOID Transaction
+
+### ADJUST Transaction:
+
+1. Verify Input Parameters are passed correctly in the correct format (Data type validation).
+2. Verify if PERSON exists in the system by using PERSON_ID in PERSON_TABLE.
+3. Verify TRANSACTION_TYPE by Transaction Name in TRANSACTION_TYPE_TABLE if the user is trying to perform a valid transaction.
+4. Verify if the Person has access to perform the transaction in PERSON_CAN_DO_TABLE.
+5. Verify if the Unique Transaction Sequence exists in history by checking sequence number, DEPOSIT transaction type.
+6. If all conditions are met, proceed with Inserting ADJUST Transaction.
